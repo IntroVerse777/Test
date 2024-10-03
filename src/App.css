@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background: #333;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.connect-button,
+.donate-button {
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  color: #ffffff;
+  background-color: #512da8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 20px;
+}
+
+.connect-button:hover,
+.donate-button:hover {
+  background-color: #311b92;
+  transform: translateY(-2px);
+}
+
+.connect-button:active,
+.donate-button:active {
+  background-color: #311b92;
+  transform: translateY(0);
+}
+
+p {
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-header {
+    padding: 20px;
+  }
+
+  .connect-button,
+  .donate-button {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
